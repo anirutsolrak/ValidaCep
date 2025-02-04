@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+.progress-bar {
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.3s ease-in-out;
+}
+
+.file-drop-zone {
+  border: 2px dashed #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.file-drop-zone.drag-active {
+  border-color: #3b82f6;
+  background-color: #f8fafc;
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+to {
+    transform: rotate(360deg);
+  }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
